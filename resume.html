@@ -3,59 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ATS-Friendly Resume</title>
+  <title>Academic CV - Dr. Jane Doe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
       margin: 40px;
-      padding: 0;
-      background: #fff;
+      background-color: #fff;
       color: #000;
       line-height: 1.6;
     }
 
     h1, h2, h3 {
       margin: 0;
-      padding-bottom: 5px;
+      font-weight: normal;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 5px;
     }
 
     h2 {
-      font-size: 20px;
-      border-bottom: 1px solid #000;
-      margin-top: 30px;
+      font-size: 22px;
+      margin-top: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
     }
 
     h3 {
       font-size: 16px;
       margin-top: 10px;
+      margin-bottom: 5px;
     }
 
-    .contact-info {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      margin-bottom: 20px;
+    p, ul {
+      margin-top: 0;
+      margin-bottom: 15px;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .job-title {
+    .contact {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .item-title {
       font-weight: bold;
     }
 
-    .date {
+    .item-date {
       font-style: italic;
+      float: right;
       font-size: 13px;
-      color: #333;
+      color: #555;
+    }
+
+    .clear {
+      clear: both;
     }
 
     @media print {
@@ -67,61 +78,87 @@
 </head>
 <body>
 
-  <h1>John Doe</h1>
-  <div class="contact-info">
-    Email: johndoe@example.com | Phone: (123) 456-7890 | Location: New York, NY
+  <h1>Dr. Jane Doe</h1>
+  <div class="contact">
+    Professor of Computer Science<br>
+    University of Academic Studies<br>
+    Email: janedoe@university.edu | Phone: (123) 456-7890<br>
+    Website: www.janedoeacademic.com
   </div>
 
   <div class="section">
-    <h2>Professional Summary</h2>
-    <p>Detail-oriented software engineer with 5+ years of experience in web development, focusing on clean code, performance, and responsive design. Skilled in full-stack development using modern tools and frameworks.</p>
-  </div>
-
-  <div class="section">
-    <h2>Work Experience</h2>
-
-    <div>
-      <h3 class="job-title">Full Stack Developer, XYZ Tech</h3>
-      <p class="date">June 2020 – Present</p>
-      <ul>
-        <li>Developed and maintained enterprise-level web applications using React and Node.js.</li>
-        <li>Collaborated with cross-functional teams to design scalable solutions.</li>
-        <li>Improved site performance by 30% through code optimization and caching strategies.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="job-title">Frontend Developer, ABC Media</h3>
-      <p class="date">July 2017 – May 2020</p>
-      <ul>
-        <li>Designed responsive UIs using HTML, CSS, and JavaScript.</li>
-        <li>Worked closely with UX designers and backend developers to deliver user-focused features.</li>
-      </ul>
-    </div>
+    <h2>Research Interests</h2>
+    <p>Artificial Intelligence, Machine Learning, Human-Computer Interaction, Educational Technology.</p>
   </div>
 
   <div class="section">
     <h2>Education</h2>
-    <h3>Bachelor of Science in Computer Science</h3>
-    <p class="date">University of California, 2013 – 2017</p>
+    <div>
+      <h3 class="item-title">Ph.D. in Computer Science<span class="item-date">2012 – 2016</span></h3>
+      <div class="clear"></div>
+      <p>Massachusetts Institute of Technology (MIT)</p>
+    </div>
+    <div>
+      <h3 class="item-title">M.Sc. in Computer Science<span class="item-date">2010 – 2012</span></h3>
+      <div class="clear"></div>
+      <p>Stanford University</p>
+    </div>
+    <div>
+      <h3 class="item-title">B.Sc. in Computer Science<span class="item-date">2006 – 2010</span></h3>
+      <div class="clear"></div>
+      <p>University of California, Berkeley</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Technical Skills</h2>
+    <h2>Academic Appointments</h2>
+    <div>
+      <h3 class="item-title">Associate Professor, University of Academic Studies<span class="item-date">2018 – Present</span></h3>
+      <div class="clear"></div>
+      <p>Teaching undergraduate and graduate courses in AI and ML. Supervising Ph.D. research projects.</p>
+    </div>
+    <div>
+      <h3 class="item-title">Assistant Professor, Tech State University<span class="item-date">2016 – 2018</span></h3>
+      <div class="clear"></div>
+      <p>Developed curriculum and research in educational technology and HCI.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Publications</h2>
     <ul>
-      <li>Languages: JavaScript, Python, Java</li>
-      <li>Frameworks: React, Node.js, Express</li>
-      <li>Tools: Git, Docker, VS Code</li>
+      <li>Doe, J., & Smith, A. (2023). *Adaptive Learning in Smart Classrooms*. Journal of Educational AI.</li>
+      <li>Doe, J. (2022). *Human-AI Collaboration in Creative Work*. ACM Transactions on HCI.</li>
+      <li>Doe, J., & Lee, M. (2020). *Machine Learning in Education*. IEEE Transactions on Learning Technologies.</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>Certifications</h2>
+    <h2>Teaching Experience</h2>
     <ul>
-      <li>AWS Certified Developer – Associate</li>
-      <li>Scrum Master Certified (SMC)</li>
+      <li>CS501: Advanced Machine Learning – Graduate Level</li>
+      <li>CS301: Human-Computer Interaction – Undergraduate Level</li>
+      <li>CS105: Introduction to Programming – First Year</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Awards and Honors</h2>
+    <ul>
+      <li>Best Paper Award – ACM CHI Conference, 2022</li>
+      <li>Teaching Excellence Award – Tech State University, 2017</li>
+      <li>NSF Research Fellowship – 2013–2016</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Professional Memberships</h2>
+    <ul>
+      <li>Member, Association for Computing Machinery (ACM)</li>
+      <li>Member, IEEE Computer Society</li>
     </ul>
   </div>
 
 </body>
 </html>
+ 
