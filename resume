@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Resume</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #000;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    ul {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .date {
+      float: right;
+      font-style: italic;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>John Doe</h1>
+  <p class="contact">
+    Email: johndoe@example.com | Phone: (123) 456-7890<br>
+    Address: 123 Main Street, City, Country
+  </p>
+
+  <div class="section">
+    <h2>Objective</h2>
+    <p>To obtain a position as a Software Engineer where I can utilize my coding and problem-solving skills to contribute to the growth of the company.</p>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p class="job-title">B.Sc. in Computer Science<span class="date">2020 – 2023</span></p>
+    <p>XYZ University</p>
+    <div class="clear"></div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <p class="job-title">Junior Developer, ABC Tech Solutions <span class="date">2023 – Present</span></p>
+    <ul>
+      <li>Maintained internal web tools using Python and JavaScript.</li>
+      <li>Worked with the QA team to test and improve code quality.</li>
+    </ul>
+
+    <p class="job-title">Intern, XYZ Web Agency <span class="date">2022 – 2023</span></p>
+    <ul>
+      <li>Built mobile-responsive pages using HTML, CSS, and Bootstrap.</li>
+      <li>Contributed to design adjustments and basic client interactions.</li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: HTML, CSS, JavaScript, Python, Java</li>
+      <li>Tools: Git, GitHub, VS Code, Postman</li>
+      <li>Soft Skills: Communication, Problem-solving, Teamwork</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>References</h2>
+    <p>Available upon request.</p>
+  </div>
+
+</body>
+</html>
