@@ -1,182 +1,152 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Creative Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimalist Resume</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #222;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
-      color: #333;
+      padding: 40px;
+      line-height: 1.6;
     }
 
-    .container {
-      display: flex;
-      max-width: 1000px;
-      margin: 40px auto;
-      background: #fff;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
+    .resume {
+      max-width: 800px;
+      margin: auto;
     }
 
-    .sidebar {
-      width: 35%;
-      background: #2c3e50;
-      color: #fff;
-      padding: 30px;
-    }
-
-    .sidebar h2 {
-      color: #1abc9c;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .sidebar p,
-    .sidebar li {
-      font-size: 14px;
-    }
-
-    .sidebar ul {
-      padding-left: 20px;
-    }
-
-    .main {
-      width: 65%;
-      padding: 30px;
-    }
-
-    .main h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
-    }
-
-    .main h3 {
+    h1, h2, h3 {
       font-weight: normal;
-      color: #888;
-      margin-top: 0;
-    }
-
-    .section {
-      margin-bottom: 25px;
-    }
-
-    .section h2 {
-      font-size: 20px;
-      border-bottom: 2px solid #1abc9c;
-      padding-bottom: 5px;
-      color: #1abc9c;
-      margin-bottom: 15px;
-    }
-
-    .item {
-      margin-bottom: 15px;
-    }
-
-    .item h4 {
       margin: 0;
-      font-size: 16px;
-      font-weight: bold;
     }
 
-    .item span {
-      font-style: italic;
-      font-size: 14px;
-      color: #999;
-    }
-
-    .skill-bar {
-      background: #ddd;
-      border-radius: 20px;
-      overflow: hidden;
-      height: 8px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-
-    .skill-level {
-      height: 100%;
-      background: #1abc9c;
-    }
-
-    .contact-info {
+    h1 {
+      font-size: 36px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
       margin-bottom: 30px;
     }
 
-    .contact-info p {
-      margin: 5px 0;
+    h2 {
+      font-size: 20px;
+      color: #555;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
+    h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    p, ul {
+      margin: 5px 0 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item span {
+      float: right;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 20px;
       }
-      .sidebar, .main {
-        width: 100%;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .item span {
+        float: none;
+        display: block;
+        margin-top: 5px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="sidebar">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <p>Email: jane@example.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Website: janedesigns.com</p>
-        <p>Location: New York, USA</p>
-      </div>
-
-      <h2>Skills</h2>
-      <p>HTML</p>
-      <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-      <p>CSS</p>
-      <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-      <p>JavaScript</p>
-      <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-      <p>Photoshop</p>
-      <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+  <div class="resume">
+    <h1>John Smith</h1>
+    <div class="contact">
+      Email: johnsmith@example.com | Phone: (123) 456-7890 | Location: San Francisco, CA
     </div>
 
-    <div class="main">
-      <h1>Jane Doe</h1>
-      <h3>Web & Graphic Designer</h3>
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Experienced software developer with a focus on clean code, responsive design, and modern web technologies. Passionate about building accessible and user-centric applications.</p>
+    </div>
 
-      <div class="section">
-        <h2>Profile</h2>
-        <p>Creative and dedicated web & graphic designer with 4+ years of experience designing engaging and user-friendly interfaces and branding materials.</p>
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>Senior Web Developer, Acme Corp <span>2022 – Present</span></h3>
+        <div class="clear"></div>
+        <ul>
+          <li>Built and maintained scalable web applications using React and Node.js.</li>
+          <li>Led front-end team on a product used by 50K+ users.</li>
+        </ul>
       </div>
 
-      <div class="section">
-        <h2>Experience</h2>
-        <div class="item">
-          <h4>Senior Designer - Creative Studio</h4>
-          <span>2021 – Present</span>
-          <p>Designed websites, mobile app UIs, and branding kits for startups. Led a small team of junior designers.</p>
-        </div>
-        <div class="item">
-          <h4>Graphic Designer - Media Agency</h4>
-          <span>2019 – 2021</span>
-          <p>Created social media designs, banners, and video thumbnails for marketing campaigns.</p>
-        </div>
+      <div class="item">
+        <h3>Web Developer, Pixel Labs <span>2020 – 2022</span></h3>
+        <div class="clear"></div>
+        <ul>
+          <li>Developed and optimized marketing websites using HTML, CSS, JavaScript.</li>
+          <li>Collaborated with UI/UX designers for clean user experiences.</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="section">
-        <h2>Education</h2>
-        <div class="item">
-          <h4>B.A. in Visual Communication</h4>
-          <span>2016 – 2019</span>
-          <p>New York School of Design</p>
-        </div>
+    <div class="section">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>B.Sc. in Computer Science <span>2016 – 2020</span></h3>
+        <div class="clear"></div>
+        <p>University of California, Berkeley</p>
       </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue, Tailwind CSS</li>
+        <li>Node.js, Express.js</li>
+        <li>Git, GitHub, Webpack</li>
+      </ul>
     </div>
   </div>
 
