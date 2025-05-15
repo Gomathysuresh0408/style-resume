@@ -2,121 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Classic Resume</title>
+  <title>Modern Resume</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Georgia, serif;
-      font-size: 16px;
-      line-height: 1.6;
-      background-color: #fff;
-      color: #000;
-      margin: 40px auto;
-      max-width: 800px;
-      padding: 20px;
-    }
-
-    h1, h2 {
-      margin-bottom: 5px;
-    }
-
-    h1 {
-      font-size: 32px;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      font-size: 20px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 5px;
-    }
-
-    p {
-      margin: 5px 0;
-    }
-
-    ul {
-      margin-top: 5px;
-      margin-bottom: 15px;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .contact {
-      font-size: 14px;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f7f9;
       color: #333;
     }
 
-    .job-title {
-      font-weight: bold;
+    .resume {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     }
 
-    .date {
+    header {
+      text-align: center;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #00bcd4;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #00bcd4;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .item span {
       float: right;
+      color: #888;
       font-style: italic;
+      font-size: 14px;
     }
 
     .clear {
       clear: both;
     }
 
-    @media print {
-      body {
-        margin: 0;
-        box-shadow: none;
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #00bcd4;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .resume {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .item h3 {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>John Doe</h1>
-  <p class="contact">
-    Email: johndoe@example.com | Phone: (123) 456-7890<br>
-    Address: 123 Main Street, City, Country
-  </p>
+  <div class="resume">
+    <header>
+      <h1>Jane Doe</h1>
+      <p>Email: janedoe@email.com | Phone: (123) 456-7890 | Portfolio: janedoe.dev</p>
+    </header>
 
-  <div class="section">
-    <h2>Objective</h2>
-    <p>To obtain a position as a Software Engineer where I can utilize my coding and problem-solving skills to contribute to the growth of the company.</p>
-  </div>
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Creative and detail-oriented Front-End Developer with 3+ years of experience building responsive, user-friendly web applications using HTML, CSS, JavaScript, and React.js.</p>
+    </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p class="job-title">B.Sc. in Computer Science<span class="date">2020 – 2023</span></p>
-    <p>XYZ University</p>
-    <div class="clear"></div>
-  </div>
+    <section>
+      <h2>Experience</h2>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <p class="job-title">Junior Developer, ABC Tech Solutions <span class="date">2023 – Present</span></p>
-    <ul>
-      <li>Maintained internal web tools using Python and JavaScript.</li>
-      <li>Worked with the QA team to test and improve code quality.</li>
-    </ul>
+      <div class="item">
+        <h3>Front-End Developer – ABC Tech <span>2022 – Present</span></h3>
+        <div class="clear"></div>
+        <ul>
+          <li>Designed modern UIs using React and Tailwind CSS.</li>
+          <li>Implemented RESTful API integrations and reusable components.</li>
+        </ul>
+      </div>
 
-    <p class="job-title">Intern, XYZ Web Agency <span class="date">2022 – 2023</span></p>
-    <ul>
-      <li>Built mobile-responsive pages using HTML, CSS, and Bootstrap.</li>
-      <li>Contributed to design adjustments and basic client interactions.</li>
-    </ul>
-    <div class="clear"></div>
-  </div>
+      <div class="item">
+        <h3>Web Developer Intern – XYZ Studios <span>2021 – 2022</span></h3>
+        <div class="clear"></div>
+        <ul>
+          <li>Developed static websites using HTML, CSS, and Bootstrap.</li>
+          <li>Worked closely with designers to refine responsive designs.</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: HTML, CSS, JavaScript, Python, Java</li>
-      <li>Tools: Git, GitHub, VS Code, Postman</li>
-      <li>Soft Skills: Communication, Problem-solving, Teamwork</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>B.Sc. in Computer Science – Modern University <span>2018 – 2021</span></h3>
+        <div class="clear"></div>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>References</h2>
-    <p>Available upon request.</p>
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Figma</div>
+      </div>
+    </section>
   </div>
 
 </body>
